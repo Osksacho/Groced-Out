@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://call1ybxiha2v"]
+
+[ext_resource type="Texture2D" uid="uid://beychtojhq7ki" path="res://supermarket/wall albedo.jpg" id="1_hjfxn"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_roy1p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5ve5"]
+albedo_texture = ExtResource("1_hjfxn")
+
+[sub_resource type="BoxMesh" id="BoxMesh_jciex"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2wgq5"]
+albedo_color = Color(0.494118, 0.494118, 0.494118, 1)
+
+[node name="wall" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1, 0)
+mesh = SubResource("PlaneMesh_roy1p")
+surface_material_override/0 = SubResource("StandardMaterial3D_n5ve5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.05, 0.95)
+mesh = SubResource("BoxMesh_jciex")
+surface_material_override/0 = SubResource("StandardMaterial3D_2wgq5")
