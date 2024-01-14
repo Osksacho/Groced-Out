@@ -1,15 +1,15 @@
 [gd_scene load_steps=5 format=3 uid="uid://bi8y2lrdjbqm3"]
 
-[ext_resource type="Texture2D" uid="uid://bd0wg071t5gjc" path="res://supermarket/floor albedo.jpg" id="1_hv51x"]
-[ext_resource type="Script" path="res://supermarket/floor.cs" id="2_lalux"]
+[ext_resource type="Texture2D" uid="uid://bd0wg071t5gjc" path="res://supermarket/assets/floor albedo.jpg" id="1_g1u5x"]
+[ext_resource type="Script" path="res://supermarket/assets/floor.cs" id="2_2nsq3"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_bumjk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w125d"]
-albedo_texture = ExtResource("1_hv51x")
+albedo_texture = ExtResource("1_g1u5x")
 uv1_offset = Vector3(1, 0, 0)
 
 [node name="floor" type="MeshInstance3D"]
 mesh = SubResource("PlaneMesh_bumjk")
 surface_material_override/0 = SubResource("StandardMaterial3D_w125d")
-script = ExtResource("2_lalux")
+script = ExtResource("2_2nsq3")

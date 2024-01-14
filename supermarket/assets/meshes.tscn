@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cexascvf4ksui"]
+
+[ext_resource type="PackedScene" path="res://supermarket/assets/floor.tscn" id="1_llte3"]
+
+[node name="meshes" type="Node3D"]
+
+[node name="floor" parent="." instance=ExtResource("1_llte3")]

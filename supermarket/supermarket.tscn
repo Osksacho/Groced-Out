@@ -1,24 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgoqef4cdjv43"]
+[gd_scene load_steps=2 format=3 uid="uid://bgoqef4cdjv43"]
 
-[ext_resource type="PackedScene" uid="uid://call1ybxiha2v" path="res://supermarket/wall.tscn" id="2_nxotv"]
-[ext_resource type="MeshLibrary" uid="uid://80pmqv20inw5" path="res://supermarket/meshes.tres" id="3_h78wp"]
+[ext_resource type="MeshLibrary" uid="uid://pmp8wgsfh3ex" path="res://supermarket/floor_mesh.tres" id="2_r2e1m"]
 
 [node name="supermarket" type="Node3D"]
 
-[node name="wall" parent="." instance=ExtResource("2_nxotv")]
-visible = false
-
-[node name="wall2" parent="." instance=ExtResource("2_nxotv")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2, 1, 0)
-visible = false
-
-[node name="wall3" parent="." instance=ExtResource("2_nxotv")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2, 1, 0)
-visible = false
-skeleton = NodePath("../wall")
-
 [node name="Floor" type="GridMap" parent="."]
-mesh_library = ExtResource("3_h78wp")
+mesh_library = ExtResource("2_r2e1m")
 cell_size = Vector3(2, 1, 2)
 cell_center_y = false
 data = {

@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://call1ybxiha2v"]
 
-[ext_resource type="Texture2D" uid="uid://beychtojhq7ki" path="res://supermarket/wall albedo.jpg" id="1_hjfxn"]
+[ext_resource type="Texture2D" uid="uid://beychtojhq7ki" path="res://supermarket/assets/wall albedo.jpg" id="1_de57m"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_roy1p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5ve5"]
-albedo_texture = ExtResource("1_hjfxn")
+albedo_texture = ExtResource("1_de57m")
 
 [sub_resource type="BoxMesh" id="BoxMesh_jciex"]
 
